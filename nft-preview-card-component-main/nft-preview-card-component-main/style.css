@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.style_1 {
+  color: white;
+}
+
+.style_2 {
+  color: hsl(215, 51%, 70%);
+}
+
+.style_1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.container,
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  max-width: 98%;
+  width: 18rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.content {
+  gap: 1rem;
+}
+
+#contentImg {
+  width: 100%;
+}
+
+#contentImg img {
+  width: 100%;
+  height: auto;
+}
+
+#overlay {
+  display: none;
+  cursor: pointer;
+  left: 0;
+  padding: 100px;
+  height: auto;
+  background-color: hsla(178, 100%, 50%, 0.404);
+  position: absolute;
+}
+
+#contentImg:hover > #overlay {
+  display: initial;
+}
+
+#content--extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+#content--extra > :first-child {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+#content--extra img {
+  vertical-align: -3px;
+}
+
+.content img {
+  border-radius: 10px;
+}
+
+#creator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#creator img {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 32px;
+  height: auto;
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+  height: 1px;
+}
