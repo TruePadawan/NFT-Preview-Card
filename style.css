@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-body {
+main {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -113,4 +113,12 @@ body {
 hr {
   color: hsl(215, 32%, 27%);
   height: 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
